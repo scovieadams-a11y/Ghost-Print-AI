@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification Successful | Ghost Print AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            background-color: #050505; 
+            background-image: radial-gradient(#10b98110 1px, transparent 1px);
+            background-size: 30px 30px;
+            color: #fafafa; 
+            font-family: 'Space Grotesk', sans-serif; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .glass-card {
+            background: rgba(15, 15, 15, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+            padding: 40px;
+            border-radius: 24px;
+        }
+        .check-circle {
+            width: 80px;
+            height: 80px;
+            border: 2px solid #10b981;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+        }
+        .btn-premium {
+            background: linear-gradient(90deg, #059669 0%, #10b981 100%);
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+            display: inline-block;
+            text-decoration: none;
+            width: 100%;
+            color: white;
+            font-weight: bold;
+            padding: 16px 0;
+            border-radius: 12px;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 0.2em;
+            transition: 0.3s;
+        }
+        .btn-premium:hover {
+            filter: brightness(1.1);
+            box-shadow: 0 6px 20px rgba(16, 185, 129, 0.5);
+        }
+        .glow-text { text-shadow: 0 0 10px rgba(16, 185, 129, 0.5); }
+        .step-box {
+            background: rgba(255,255,255,0.03);
+            border-left: 4px solid #10b981;
+            padding: 16px;
+            border-radius: 0 8px 8px 0;
+            text-align: left;
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+<body class="p-6">
+    <div class="glass-card">
+        <div class="check-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+        </div>
+        <h1 class="text-3xl font-bold mb-2 glow-text tracking-tight">Access Granted</h1>
+        <p class="text-emerald-500 text-xs tracking-[0.3em] uppercase mb-8">Transaction Verified</p>
+        <p class="text-gray-400 text-sm mb-8 leading-relaxed">
+            Welcome to the elite circle. Your payment has been received. Follow these steps to activate your tools immediately.
+        </p>
+        <div class="space-y-4 mb-10">
+            <div class="step-box">
+                <span class="text-[10px] text-emerald-500 font-bold uppercase tracking-widest block mb-1">Step 01</span>
+                <p class="text-sm font-medium">Take a screenshot of your M-PESA confirmation.</p>
+            </div>
+            <div class="step-box">
+                <span class="text-[10px] text-emerald-500 font-bold uppercase tracking-widest block mb-1">Step 02</span>
+                <p class="text-sm font-medium">Send proof to our Telegram for your license key.</p>
+            </div>
+        </div>
+        <a href="https://t.me/AdamsFX_Support" class="btn-premium">Get License Key</a>
+        <a href="index.html" class="block mt-6 text-[10px] text-gray-600 uppercase tracking-widest hover:text-emerald-500 transition-colors">Return to Terminal</a>
+    </div>
+</body>
+</html>
