@@ -10,12 +10,6 @@
         .tech-border { border: 1px solid #1f2937; border-radius: 8px; transition: 0.3s; }
         .tech-border:hover { border-color: #10b981; box-shadow: 0 0 15px rgba(16, 185, 129, 0.2); }
         .m-pesa-green { color: #40af44; font-weight: bold; }
-        .error-shake { animation: shake 0.4s; border-color: #ef4444 !important; }
-        @keyframes shake {
-            0%, 100% { transform: translateX(0); }
-            25% { transform: translateX(-5px); }
-            75% { transform: translateX(5px); }
-        }
     </style>
 </head>
 <body class="p-6 md:p-12">
@@ -26,28 +20,23 @@
     </header>
 
     <main class="max-w-5xl mx-auto">
-        <section class="mb-12">
-            <h2 class="text-4xl font-extrabold mb-4">Precision Indicators & Automated Bots</h2>
-            <p class="text-gray-400 max-w-2xl">Access the Precision Gap Algorithm (PGA) and high-concurrency trading bots designed for Gold (XAUUSD) and Synthetic Indices.</p>
-        </section>
-
         <div class="grid md:grid-cols-2 gap-8">
             
-            <div id="card-1" class="tech-border p-8 bg-zinc-900/50">
+            <div class="tech-border p-8 bg-zinc-900/50">
                 <h3 class="text-xl font-bold mb-2">SMC Precision Indicator</h3>
-                <p class="text-sm text-gray-500 mb-6">Real-time liquidity gap detection for MT4/MT5 and TradingView.</p>
+                <p class="text-sm text-gray-500 mb-6">Real-time liquidity gap detection for MT4/MT5.</p>
                 <div class="text-2xl font-mono mb-6">KES 3,500</div>
-                <button onclick="processPayment https://paynecta.co.ke/pay/smc-indicator- @KSH3,500 (3500, 'SMC-Indicator')" https://paynecta.co.ke/pay/smc-indicator- @KSH3,500class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded uppercase text-sm tracking-widest transition-all">
-                    Pay <span class="m-pesa-green">M-PESA</span> (KES 3,500)
+                <button onclick="secureCheckout(3500)" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded uppercase text-sm tracking-widest">
+                    Buy via <span class="m-pesa-green">M-PESA</span>
                 </button>
             </div>
 
-            <div id="card-2" class="tech-border p-8 bg-zinc-900/50">
+            <div class="tech-border p-8 bg-zinc-900/50">
                 <h3 class="text-xl font-bold mb-2">Ghost Print Execution Bot</h3>
-                <p class="text-sm text-gray-500 mb-6">Automated Martingale & SMC-based execution for Synthetics.</p>
+                <p class="text-sm text-gray-500 mb-6">Automated SMC-based execution for Synthetics.</p>
                 <div class="text-2xl font-mono mb-6">KES 5,000</div>
-                <button onclick="processPayment(5000, 'Execution-Bot')" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded uppercase text-sm tracking-widest transition-all">
-                    Pay <span class="m-pesa-green">M-PESA</span> (KES 5,000)
+                <button onclick="secureCheckout(5000)" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded uppercase text-sm tracking-widest">
+                    Buy via <span class="m-pesa-green">M-PESA</span>
                 </button>
             </div>
 
@@ -56,23 +45,26 @@
 
     <script>
         /**
-         * Logic to prevent underpayment
-         * @param {number} amount - The required price
-         * @param {string} product - The product name for the URL
+         * Secure Checkout System
+         * Prevents underpayment and handles the space in the URL handle
          */
-        function processPayment(amount, product) {
-            // Hardcoded logic to ensure no manual manipulation of the amount variable in simple ways
+        function secureCheckout(amount) {
+            // STRICT GATE: If the amount passed is less than 3500, kill the process.
             if (amount < 3500) {
-                alert("Error: System integrity check failed. Minimum payment not met.");
+                alert("Security Protocol: Payment amount must be at least KES 3,500.");
                 return;
             }
 
-            // Constructing the secure URL
-            // Using the Paynecta format: amount must equal the requested price
-            const paymentUrl = `https://paynecta.co.ke/pay/${product}?amount=${amount}`;
+            // Your new handle: 'smc indicator'
+            // We use %20 to represent the space so the link doesn't break
+            const handle = "smc%20indicator";
+            const baseUrl = `https://paynecta.co.ke/pay/${handle}`;
             
-            console.log("Redirecting to secure payment gateway...");
-            window.location.href = paymentUrl;
+            // Build the final secure URL with the amount parameter
+            const finalUrl = `${baseUrl}?amount=${amount}`;
+            
+            // Redirect the user
+            window.location.href = finalUrl;
         }
     </script>
 
