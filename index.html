@@ -9,7 +9,13 @@
         body { background-color: #0a0a0a; color: #e5e5e5; font-family: 'Inter', sans-serif; }
         .tech-border { border: 1px solid #1f2937; border-radius: 8px; transition: 0.3s; }
         .tech-border:hover { border-color: #10b981; box-shadow: 0 0 15px rgba(16, 185, 129, 0.2); }
-        .m-pesa-green { color: #40af44; }
+        .m-pesa-green { color: #40af44; font-weight: bold; }
+        .error-shake { animation: shake 0.4s; border-color: #ef4444 !important; }
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
     </style>
 </head>
 <body class="p-6 md:p-12">
@@ -27,26 +33,48 @@
 
         <div class="grid md:grid-cols-2 gap-8">
             
-            <div class="tech-border p-8 bg-zinc-900/50">
+            <div id="card-1" class="tech-border p-8 bg-zinc-900/50">
                 <h3 class="text-xl font-bold mb-2">SMC Precision Indicator</h3>
                 <p class="text-sm text-gray-500 mb-6">Real-time liquidity gap detection for MT4/MT5 and TradingView.</p>
                 <div class="text-2xl font-mono mb-6">KES 3,500</div>
-                <a href="https://paynecta.co.ke/pay/smc-indicator- @KSH3,500?amount=≥3500" class="inline-block w-full text-center bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded uppercase text-sm tracking-widest">
-                    Buy via <span class="m-pesa-green">M-PESA</span>
-                </a>
+                <button onclick="processPayment(3500, 'SMC-Indicator')" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded uppercase text-sm tracking-widest transition-all">
+                    Pay <span class="m-pesa-green">M-PESA</span> (KES 3,500)
+                </button>
             </div>
 
-            <div class="tech-border p-8 bg-zinc-900/50">
+            <div id="card-2" class="tech-border p-8 bg-zinc-900/50">
                 <h3 class="text-xl font-bold mb-2">Ghost Print Execution Bot</h3>
                 <p class="text-sm text-gray-500 mb-6">Automated Martingale & SMC-based execution for Synthetics.</p>
                 <div class="text-2xl font-mono mb-6">KES 5,000</div>
-                <a href="YOUR_PAYMENT_LINK_HERE" class="inline-block w-full text-center bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded uppercase text-sm tracking-widest">
-                    Buy via <span class="m-pesa-green">M-PESA</span>
-                </a>
+                <button onclick="processPayment(5000, 'Execution-Bot')" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded uppercase text-sm tracking-widest transition-all">
+                    Pay <span class="m-pesa-green">M-PESA</span> (KES 5,000)
+                </button>
             </div>
 
         </div>
     </main>
+
+    <script>
+        /**
+         * Logic to prevent underpayment
+         * @param {number} amount - The required price
+         * @param {string} product - The product name for the URL
+         */
+        function processPayment(amount, product) {
+            // Hardcoded logic to ensure no manual manipulation of the amount variable in simple ways
+            if (amount < 3500) {
+                alert("Error: System integrity check failed. Minimum payment not met.");
+                return;
+            }
+
+            // Constructing the secure URL
+            // Using the Paynecta format: amount must equal the requested price
+            const paymentUrl = `https://paynecta.co.ke/pay/${product}?amount=${amount}`;
+            
+            console.log("Redirecting to secure payment gateway...");
+            window.location.href = paymentUrl;
+        }
+    </script>
 
     <footer class="max-w-5xl mx-auto mt-20 pt-8 border-t border-zinc-800 text-xs text-gray-600 text-center">
         © 2026 GHOST PRINT AI | DEVELOPED FOR ELITE TRADERS
