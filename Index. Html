@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghost Print AI | Precision Trading Tools</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #0a0a0a; color: #e5e5e5; font-family: 'Inter', sans-serif; }
+        .tech-border { border: 1px solid #1f2937; border-radius: 8px; transition: 0.3s; }
+        .tech-border:hover { border-color: #10b981; box-shadow: 0 0 15px rgba(16, 185, 129, 0.2); }
+        .m-pesa-green { color: #40af44; }
+    </style>
+</head>
+<body class="p-6 md:p-12">
+
+    <header class="max-w-5xl mx-auto flex justify-between items-center mb-16">
+        <h1 class="text-2xl font-bold tracking-tighter text-emerald-500">GHOST PRINT AI</h1>
+        <div class="text-xs uppercase tracking-widest text-gray-500">[ SYSTEM: ACTIVE ]</div>
+    </header>
+
+    <main class="max-w-5xl mx-auto">
+        <section class="mb-12">
+            <h2 class="text-4xl font-extrabold mb-4">Precision Indicators & Automated Bots</h2>
+            <p class="text-gray-400 max-w-2xl">Access the Precision Gap Algorithm (PGA) and high-concurrency trading bots designed for Gold (XAUUSD) and Synthetic Indices.</p>
+        </section>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            
+            <div class="tech-border p-8 bg-zinc-900/50">
+                <h3 class="text-xl font-bold mb-2">PGA Precision Indicator</h3>
+                <p class="text-sm text-gray-500 mb-6">Real-time liquidity gap detection for MT4/MT5 and TradingView.</p>
+                <div class="text-2xl font-mono mb-6">KES 2,500</div>
+                <a href="YOUR_PAYMENT_LINK_HERE" class="inline-block w-full text-center bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded uppercase text-sm tracking-widest">
+                    Buy via <span class="m-pesa-green">M-PESA</span>
+                </a>
+            </div>
+
+            <div class="tech-border p-8 bg-zinc-900/50">
+                <h3 class="text-xl font-bold mb-2">Ghost Print Execution Bot</h3>
+                <p class="text-sm text-gray-500 mb-6">Automated Martingale & SMC-based execution for Synthetics.</p>
+                <div class="text-2xl font-mono mb-6">KES 5,000</div>
+                <a href="YOUR_PAYMENT_LINK_HERE" class="inline-block w-full text-center bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded uppercase text-sm tracking-widest">
+                    Buy via <span class="m-pesa-green">M-PESA</span>
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="max-w-5xl mx-auto mt-20 pt-8 border-t border-zinc-800 text-xs text-gray-600 text-center">
+        © 2026 GHOST PRINT AI | DEVELOPED FOR ELITE TRADERS
+    </footer>
+
+</body>
+</html>
