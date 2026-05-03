@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processing Transaction | Ghost Print AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            background-color: #050505; 
+            color: #fafafa; 
+            font-family: 'Space Grotesk', sans-serif; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .loader {
+            width: 48px;
+            height: 48px;
+            border: 3px solid #10b981;
+            border-bottom-color: transparent;
+            border-radius: 50%;
+            display: inline-block;
+            box-sizing: border-box;
+            animation: rotation 1s linear infinite;
+        }
+        @keyframes rotation {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .scan-line {
+            width: 100%;
+            height: 2px;
+            background: #10b981;
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-shadow: 0 0 15px #10b981;
+            animation: scan 3s linear infinite;
+            opacity: 0.3;
+        }
+        @keyframes scan {
+            0% { top: 0; }
+            100% { top: 100vh; }
+        }
+    </style>
+</head>
+<body>
+    <div class="scan-line"></div>
+
+    <div class="text-center">
+        <span class="loader mb-6"></span>
+        <h1 class="text-xl font-bold tracking-[0.2em] text-emerald-500 mb-2">VERIFYING SIGNAL...</h1>
+        <p class="text-gray-500 text-[10px] uppercase tracking-widest">Securing Institutional Access</p>
+    </div>
+
+    <script>
+        // After 3 seconds, automatically send them to the Thank You page
+        setTimeout(function() {
+            window.location.href = "thankyou.html";
+        }, 3500);
+    </script>
+</body>
+</html>
