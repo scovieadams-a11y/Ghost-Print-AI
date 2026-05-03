@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Terminal | Ghost Print AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            background-color: #050505; 
+            background-image: radial-gradient(#10b98110 1px, transparent 1px);
+            background-size: 30px 30px;
+            color: #fafafa; 
+            font-family: 'Space Grotesk', sans-serif; 
+        }
+        .glass-card {
+            background: rgba(15, 15, 15, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+        }
+        .download-btn {
+            background: linear-gradient(90deg, #10b981 0%, #059669 100%);
+            transition: 0.3s;
+        }
+        .download-btn:hover { transform: scale(1.02); box-shadow: 0 0 20px rgba(16, 185, 129, 0.4); }
+    </style>
+</head>
+<body class="p-6 md:p-12">
+
+    <div class="max-w-4xl mx-auto">
+        <header class="flex justify-between items-center mb-12">
+            <h1 class="text-xl font-bold text-emerald-500 tracking-tighter">GHOST TERMINAL</h1>
+            <span class="text-[10px] text-gray-500 uppercase tracking-widest">Authorized Access Only</span>
+        </header>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="glass-card p-8 rounded-2xl">
+                <h3 class="text-xl font-bold mb-4">SMC Precision Indicator</h3>
+                <p class="text-gray-400 text-sm mb-6">Version 4.0 (MT4/MT5 Compatible). Includes Precision Gap Algorithm logic.</p>
+                <a href="YOUR_LINK_TO_INDICATOR_FILE" class="download-btn block text-center py-4 rounded-xl font-bold uppercase text-xs tracking-widest">Download File</a>
+            </div>
+
+            <div class="glass-card p-8 rounded-2xl">
+                <h3 class="text-xl font-bold mb-4">Ghost Print Bot</h3>
+                <p class="text-gray-400 text-sm mb-6">Execution engine for Synthetic Indices. Optimized for high concurrency.</p>
+                <a href="YOUR_LINK_TO_BOT_FILE" class="download-btn block text-center py-4 rounded-xl font-bold uppercase text-xs tracking-widest">Download Bot</a>
+            </div>
+        </div>
+
+        <div class="mt-12 p-6 border border-emerald-900/30 rounded-xl bg-emerald-950/10 text-center">
+            <p class="text-xs text-emerald-500 uppercase tracking-widest mb-2">Need License Key?</p>
+            <p class="text-sm text-gray-400">If your tool asks for a key, contact <a href="https://t.me/AdamsFX_Support" class="underline text-white">Adams Support</a> with your M-Pesa ID.</p>
+        </div>
+    </div>
+
+</body>
+</html>
+      
