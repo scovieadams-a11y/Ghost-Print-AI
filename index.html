@@ -3,73 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ghost Print AI | Precision Trading Tools</title>
+    <title>Ghost Print AI | Precision Trading</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
     <style>
-        body { background-color: #0a0a0a; color: #e5e5e5; font-family: 'Inter', sans-serif; }
-        .tech-border { border: 1px solid #1f2937; border-radius: 8px; transition: 0.3s; }
-        .tech-border:hover { border-color: #10b981; box-shadow: 0 0 15px rgba(16, 185, 129, 0.2); }
-        .m-pesa-green { color: #40af44; font-weight: bold; }
+        body { 
+            background-color: #050505; 
+            background-image: radial-gradient(#10b98110 1px, transparent 1px);
+            background-size: 30px 30px;
+            color: #fafafa; 
+            font-family: 'Space Grotesk', sans-serif; 
+        }
+        
+        .glass-card {
+            background: rgba(15, 15, 15, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .glass-card:hover {
+            border-color: #10b981;
+            box-shadow: 0 0 30px rgba(16, 185, 129, 0.15);
+            transform: translateY(-5px);
+        }
+
+        .glow-text {
+            text-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+        }
+
+        .btn-premium {
+            background: linear-gradient(90deg, #059669 0%, #10b981 100%);
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+            transition: 0.3s;
+            display: block;
+            text-align: center;
+        }
+
+        .btn-premium:hover {
+            filter: brightness(1.1);
+            box-shadow: 0 6px 20px rgba(16, 185, 129, 0.5);
+        }
     </style>
 </head>
-<body class="p-6 md:p-12">
+<body class="p-6 md:p-12 min-h-screen">
 
-    <header class="max-w-5xl mx-auto flex justify-between items-center mb-16">
-        <h1 class="text-2xl font-bold tracking-tighter text-emerald-500">GHOST PRINT AI</h1>
-        <div class="text-xs uppercase tracking-widest text-gray-500">[ SYSTEM: ACTIVE ]</div>
+    <header class="max-w-4xl mx-auto flex justify-between items-center mb-20">
+        <div>
+            <h1 class="text-xl font-bold tracking-[0.2em] text-emerald-500 glow-text">GHOST PRINT AI</h1>
+            <p class="text-[10px] text-gray-500 tracking-[0.3em] uppercase mt-1">Institutional Grade Technology</p>
+        </div>
+        <div class="px-3 py-1 border border-emerald-900/50 rounded-full bg-emerald-950/20">
+            <span class="text-[10px] uppercase tracking-widest text-emerald-400 animate-pulse">● System Active</span>
+        </div>
     </header>
 
-    <main class="max-w-5xl mx-auto">
-        <div class="grid md:grid-cols-2 gap-8">
+    <main class="max-w-4xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-10">
             
-            <div class="tech-border p-8 bg-zinc-900/50">
-                <h3 class="text-xl font-bold mb-2">SMC Precision Indicator</h3>
-                <p class="text-sm text-gray-500 mb-6">Real-time liquidity gap detection for MT4/MT5.</p>
-                <div class="text-2xl font-mono mb-6">KES 3,500</div>
-                <button onclick="secureCheckout(3500)" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded uppercase text-sm tracking-widest">
-                    Buy via <span class="m-pesa-green">M-PESA</span>
-                </button>
+            <div class="glass-card p-10 rounded-2xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-4 opacity-10 font-bold text-6xl">01</div>
+                <h3 class="text-2xl font-bold mb-1">SMC Precision</h3>
+                <p class="text-emerald-500 text-xs tracking-widest uppercase mb-6 font-medium">Indicator v4.0</p>
+                
+                <p class="text-gray-400 text-sm leading-relaxed mb-8">
+                    Proprietary liquidity gap detection and institutional order flow mapping. Built for MT4/MT5.
+                </p>
+                
+                <div class="mb-8">
+                    <span class="text-xs text-gray-500 block uppercase tracking-wider mb-1">Lifetime Access</span>
+                    <span class="text-3xl font-light tracking-tight">KES 3,500</span>
+                </div>
+
+                <a href="https://selar.co/77877c3735" class="btn-premium w-full text-white font-bold py-4 rounded-xl uppercase text-xs tracking-[0.2em]">
+                    Initialize Purchase
+                </a>
             </div>
 
-            <div class="tech-border p-8 bg-zinc-900/50">
-                <h3 class="text-xl font-bold mb-2">Ghost Print Execution Bot</h3>
-                <p class="text-sm text-gray-500 mb-6">Automated SMC-based execution for Synthetics.</p>
-                <div class="text-2xl font-mono mb-6">KES 5,000</div>
-                <button onclick="secureCheckout(5000)" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded uppercase text-sm tracking-widest">
-                    Buy via <span class="m-pesa-green">M-PESA</span>
-                </button>
+            <div class="glass-card p-10 rounded-2xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-4 opacity-10 font-bold text-6xl">02</div>
+                <h3 class="text-2xl font-bold mb-1">Ghost Bot</h3>
+                <p class="text-emerald-500 text-xs tracking-widest uppercase mb-6 font-medium">High Concurrency</p>
+                
+                <p class="text-gray-400 text-sm leading-relaxed mb-8">
+                    Automated SMC execution engine for Synthetic Indices. Zero-latency trade management.
+                </p>
+                
+                <div class="mb-8">
+                    <span class="text-xs text-gray-500 block uppercase tracking-wider mb-1">Full Automation</span>
+                    <span class="text-3xl font-light tracking-tight">KES 5,000</span>
+                </div>
+
+                <a href="https://selar.co/77877c3735" class="btn-premium w-full text-white font-bold py-4 rounded-xl uppercase text-xs tracking-[0.2em]">
+                    Initialize Purchase
+                </a>
             </div>
 
         </div>
     </main>
 
-    <script>
-        /**
-         * Secure Checkout System
-         * Prevents underpayment and handles the space in the URL handle
-         */
-        function secureCheckout(amount) {
-            // STRICT GATE: If the amount passed is less than 3500, kill the process.
-            if (amount < 3500) {
-                alert("Security Protocol: Payment amount must be at least KES 3,500.");
-                return;
-            }
-
-            // Your new handle: 'smc indicator'
-            // We use %20 to represent the space so the link doesn't break
-            const handle = "smc%20indicator";
-            const baseUrl = `https://paynecta.co.ke/pay/${handle}`;
-            
-            // Build the final secure URL with the amount parameter
-            const finalUrl = `${baseUrl}?amount=${amount}`;
-            
-            // Redirect the user
-            window.location.href = finalUrl;
-        }
-    </script>
-
-    <footer class="max-w-5xl mx-auto mt-20 pt-8 border-t border-zinc-800 text-xs text-gray-600 text-center">
-        © 2026 GHOST PRINT AI | DEVELOPED FOR ELITE TRADERS
+    <footer class="max-w-4xl mx-auto mt-32 pb-10 text-center">
+        <p class="text-[10px] text-gray-600 tracking-[0.5em] uppercase">Developed by Adams Rogers Mugendi</p>
     </footer>
 
 </body>
