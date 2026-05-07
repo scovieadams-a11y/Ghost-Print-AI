@@ -3,46 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ghost Print AI | Precision Trading</title>
+    <title>GHOST PRINT AI | Institutional Technology</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
     <style>
-        body { 
-            background-color: #050505; 
-            background-image: radial-gradient(#10b98110 1px, transparent 1px);
-            background-size: 30px 30px;
-            color: #fafafa; 
-            font-family: 'Space Grotesk', sans-serif; 
-        }
-        
+        body { background-color: #020617; color: #f8fafc; font-family: 'Inter', sans-serif; }
         .glass-card {
-            background: rgba(15, 15, 15, 0.7);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            background: rgba(16, 185, 129, 0.03);
+            border: 1px solid rgba(16, 185, 129, 0.1);
+            backdrop-filter: blur(12px);
+            transition: all 0.3s ease;
         }
-
         .glass-card:hover {
-            border-color: #10b981;
-            box-shadow: 0 0 30px rgba(16, 185, 129, 0.15);
+            border-color: rgba(16, 185, 129, 0.4);
             transform: translateY(-5px);
+            box-shadow: 0 10px 30px -10px rgba(16, 185, 129, 0.2);
         }
-
-        .glow-text {
-            text-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
-        }
-
+        .glow-text { text-shadow: 0 0 20px rgba(16, 185, 129, 0.5); }
         .btn-premium {
-            background: linear-gradient(90deg, #059669 0%, #10b981 100%);
-            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
-            transition: 0.3s;
-            display: block;
-            text-align: center;
+            background: linear-gradient(135deg, #059669 0%, #064e3b 100%);
+            transition: opacity 0.2s;
         }
-
-        .btn-premium:hover {
-            filter: brightness(1.1);
-            box-shadow: 0 6px 20px rgba(16, 185, 129, 0.5);
+        .btn-premium:hover { opacity: 0.9; }
+        .risk-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(16, 185, 129, 0.3), transparent);
         }
     </style>
 </head>
@@ -59,51 +43,65 @@
     </header>
 
     <main class="max-w-4xl mx-auto">
-        <div class="grid md:grid-cols-2 gap-10">
+        <div class="grid md:grid-cols-2 gap-10 mb-20">
             
             <div class="glass-card p-10 rounded-2xl relative overflow-hidden">
                 <div class="absolute top-0 right-0 p-4 opacity-10 font-bold text-6xl">01</div>
-                <h3 class="text-2xl font-bold mb-1">SMC Precision Indicator</h3>
+                <h3 class="text-2xl font-bold mb-1 text-white">SMC Precision Indicator</h3>
                 <p class="text-emerald-500 text-xs tracking-widest uppercase mb-6 font-medium">Indicator v1.0</p>
-                
                 <p class="text-gray-400 text-sm leading-relaxed mb-8">
                     Proprietary liquidity gap detection and institutional order flow mapping. Built for MT4/MT5.
                 </p>
-                
                 <div class="mb-8">
                     <span class="text-xs text-gray-500 block uppercase tracking-wider mb-1">Lifetime Access</span>
                     <span class="text-3xl font-light tracking-tight">KES 3,500</span>
                 </div>
-
-                <a href="https://selar.com/8f7l6319k9" class="btn-premium w-full text-white font-bold py-4 rounded-xl uppercase text-xs tracking-[0.2em]">
+                <a href="https://selar.com/8f7l6319k9" target="_blank" class="block text-center btn-premium w-full text-white font-bold py-4 rounded-xl uppercase text-xs tracking-[0.2em]">
                     Initialize Purchase
                 </a>
             </div>
 
             <div class="glass-card p-10 rounded-2xl relative overflow-hidden">
                 <div class="absolute top-0 right-0 p-4 opacity-10 font-bold text-6xl">02</div>
-                <h3 class="text-2xl font-bold mb-1">Ghost Print Bot</h3>
+                <h3 class="text-2xl font-bold mb-1 text-white">Ghost Print Bot</h3>
                 <p class="text-emerald-500 text-xs tracking-widest uppercase mb-6 font-medium">High Concurrency</p>
-                
                 <p class="text-gray-400 text-sm leading-relaxed mb-8">
                     Automated SMC execution engine for Synthetic Indices. Zero-latency trade management.
                 </p>
-                
                 <div class="mb-8">
                     <span class="text-xs text-gray-500 block uppercase tracking-wider mb-1">Full Automation</span>
                     <span class="text-3xl font-light tracking-tight">KES 5,000</span>
                 </div>
-
-                <a href="https://selar.com/4z31os7acc" class="btn-premium w-full text-white font-bold py-4 rounded-xl uppercase text-xs tracking-[0.2em]">
+                <a href="https://selar.com/4z31os7acc" target="_blank" class="block text-center btn-premium w-full text-white font-bold py-4 rounded-xl uppercase text-xs tracking-[0.2em]">
                     Initialize Purchase
                 </a>
             </div>
+        </div>
 
+        <div class="max-w-3xl mx-auto border-t border-emerald-900/30 pt-16">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h4 class="text-emerald-500 text-xs uppercase tracking-[0.3em] font-bold mb-4">Strategic Advice</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                        The <span class="text-white">Ghost Print Methodology</span> focuses on high-probability liquidity zones. We recommend a 1:3 minimum Reward-to-Risk ratio.
+                    </p>
+                    <p class="text-gray-500 text-xs italic">
+                        "Edge is found in patience, not in frequency. Wait for the print."
+                    </p>
+                </div>
+                <div class="bg-red-500/5 border border-red-900/20 p-6 rounded-xl">
+                    <h4 class="text-red-500 text-xs uppercase tracking-[0.3em] font-bold mb-3">Risk Disclosure</h4>
+                    <p class="text-gray-400 text-[11px] leading-relaxed">
+                        Trading carries a high level of risk. Statistics show that approximately <span class="text-red-400">75% to 90%</span> of retail traders lose capital. Only trade with funds you can afford to lose. Past performance of indicators/bots does not guarantee future results.
+                    </p>
+                </div>
+            </div>
         </div>
     </main>
 
     <footer class="max-w-4xl mx-auto mt-32 pb-10 text-center">
-        <p class="text-[10px] text-gray-600 tracking-[0.5em] uppercase">Developed by Ghost Print Fx +254703992485 </p>
+        <div class="risk-divider mb-8"></div>
+        <p class="text-[10px] text-gray-600 tracking-[0.5em] uppercase">Developed by Ghost Print Fx • +254703992485</p>
     </footer>
 
 </body>
