@@ -35,18 +35,32 @@
 </head>
 <body class="p-6 md:p-12 min-h-screen">
 
-    <header class="max-w-6xl mx-auto flex justify-between items-center mb-16">
-        <div>
+    <header class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center mb-16 gap-6">
+        <!-- Brand Section -->
+        <div class="text-center md:text-left">
             <h1 class="text-xl font-bold tracking-[0.2em] text-emerald-500 glow-text">GHOST PRINT AI</h1>
             <p class="text-[10px] text-gray-500 tracking-[0.3em] uppercase mt-1">Institutional Grade Technology</p>
         </div>
+
+        <!-- NEW: Center Welcome & Values Section -->
+        <div class="text-center border-x border-emerald-900/30 px-8">
+            <h2 class="text-sm font-medium tracking-[0.15em] text-white uppercase mb-1">Welcome to Ghost Print</h2>
+            <div class="flex items-center justify-center gap-3">
+                <span class="text-[9px] text-emerald-400/70 tracking-widest uppercase">Honesty</span>
+                <span class="w-1 h-1 bg-emerald-900 rounded-full"></span>
+                <span class="text-[9px] text-emerald-400/70 tracking-widest uppercase">Transparency</span>
+                <span class="w-1 h-1 bg-emerald-900 rounded-full"></span>
+                <span class="text-[9px] text-emerald-400/70 tracking-widest uppercase italic">The Precision Edge</span>
+            </div>
+        </div>
+
+        <!-- Status Section -->
         <div class="px-3 py-1 border border-emerald-900/50 rounded-full bg-emerald-950/20">
             <span class="text-[10px] uppercase tracking-widest text-emerald-400 animate-pulse">● System Active</span>
         </div>
     </header>
 
     <main class="max-w-6xl mx-auto">
-        <!-- Main Product Grid -->
         <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8 mb-20">
             
             <!-- SLOT 01: SMC PRECISION INDICATOR -->
@@ -83,7 +97,7 @@
                 <div>
                     <div class="mb-6">
                         <span class="text-xs text-gray-500 block uppercase tracking-wider mb-1">Full Automation</span>
-                        <span class="text-3xl font-light tracking-tight">KES 6,000</span>
+                        <span class="text-3xl font-light tracking-tight">KES 5,000</span>
                     </div>
                     <a href="https://selar.com/4z31os7acc" target="_blank" class="block text-center btn-premium w-full text-white font-bold py-4 rounded-xl uppercase text-xs tracking-[0.2em]">
                         Initialize Purchase
@@ -104,7 +118,7 @@
                 <div>
                     <div class="mb-6">
                         <span class="text-xs text-gray-500 block uppercase tracking-wider mb-1">Standard Entry Logic</span>
-                        <span class="text-3xl font-light tracking-tight">KES 4,500</span>
+                        <span class="text-3xl font-light tracking-tight">KES 3,500</span>
                     </div>
                     <a href="#" class="block text-center btn-premium w-full text-white font-bold py-4 rounded-xl uppercase text-xs tracking-[0.2em]">
                         Coming Soon
@@ -125,7 +139,7 @@
                 <div>
                     <div class="mb-6">
                         <span class="text-xs text-gray-500 block uppercase tracking-wider mb-1">Professional Suite</span>
-                        <span class="text-3xl font-light tracking-tight">KES 5,500</span>
+                        <span class="text-3xl font-light tracking-tight">KES 4,500</span>
                     </div>
                     <a href="#" class="block text-center btn-premium w-full text-white font-bold py-4 rounded-xl uppercase text-xs tracking-[0.2em]">
                         Coming Soon
